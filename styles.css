@@ -39,6 +39,7 @@ h2 {
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 1.4em;
+  text-align: center;
 }
 
 h3 {
@@ -342,3 +343,38 @@ p {
 
 
 /* end sponsors styles */
+
+/* begin schedule styles */
+
+.schedules-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+  height: auto;
+  width: 80%;
+  margin: 0 4em;
+  scroll-margin-top: 7em;
+  padding: 1em 0
+}
+.schedules-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  background-color: var(--bg-clr);
+  z-index: -1;
+}
+
+.schedule-image {
+  height: 40em;
+  width: 80em;
+  
+  background-color: var(--accent-clr);
+  border-radius: var(--rounded-radius);
+  
+}
+
+/* end schedules styles */
