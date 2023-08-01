@@ -36,7 +36,7 @@
     />
 
     <title>HackTheLab</title>
-    <link rel="icon" href="[TODO: Add the path to your favicon image.]" />
+    <link rel="icon" href="assets/Logo.png" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
 
@@ -44,15 +44,15 @@
     <div class="main">
       <nav class="nav-wrapper">
         <div class="logo">
-          <img class="logo-image IMAGE-GOES-HERE" />
+          <img class="logo-image IMAGE-GOES-HERE" src="assets/Logo.png" />
           <h3 class="logo-text">Hack The Lab</h3>
         </div>
         <ul class="nav">
-          <li>Prize</li>
-          <li>Schedule</li>
-          <li>Sponsors</li>
-          <li>Team</li>
-          <li>FAQ</li>
+          <li><a href="#prizes-section">Prizes</a></li>
+          <li><a href="#schedule-section">Schedule</a></li>
+          <li><a href="#sponsors-section">Sponsors</a></li>
+          <li><a href="#team-section">Team</a></li>
+          <li><a href="#faq-section">FAQ</a></li>
         </ul>
       </nav>
       <div class="landing-wrapper">
@@ -97,7 +97,7 @@
           to ask us!
         </p>
       </div>
-      <div class="prizes-wrapper">
+      <div class="prizes-wrapper" id="prizes-section">
         <h2 class="prizes-title">Prizes</h2>
         <div class="prizes-image-row">
           <img class="prizes-image IMAGE-GOES-HERE" />
@@ -108,7 +108,7 @@
           <img class="prizes-image IMAGE-GOES-HERE" />
         </div>
       </div>
-      <div class="sponsors-wrapper">
+      <div class="sponsors-wrapper" id="sponsors-section">
         <h2 class="sponsors-title">Sponsors</h2>
         <div class="sponsors-image-row">
           <img class="sponsors-image IMAGE-GOES-HERE" />
@@ -123,6 +123,9 @@
           <img class="sponsors-image IMAGE-GOES-HERE" />
         </div>
       </div>
+      <div class="schedule-wrapper" id="schedule-section"></div>
+      <div class="team-wrapper" id="team-section"></div>
+      <div class="faq-wrapper" id="faq-section"></div>
     </div>
     <script src="./scripts.js"></script>
   </body>

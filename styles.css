@@ -19,7 +19,12 @@ html, body, div, h1, h2, h3, h4, h5, p, ul, li {
   --rounded-radius: 1em;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  margin: 0;
   font-family: "Poppins", Arial, sans-serif;
   line-height: 1.6;
   color: var(--text-clr);
@@ -93,12 +98,13 @@ p {
 /* begin navbar styles */
 .nav-wrapper {
   position: sticky;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 1em 0;
 
-  top: 0;
   width: 100%;
   height: 5em;
   background-color: var(--page-clr);
@@ -121,6 +127,19 @@ p {
 }
 .logo-text {
   margin-left: 0.5em;
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0.5em 0.75em;
+  display: inline-block;
+}
+
+.nav a:hover {
+  color: var(--text-clr);
+  background-color: var(--accent-clr);
+  border-radius: var(--rounded-radius);
 }
 
 .nav-wrapper > .nav {
@@ -252,6 +271,7 @@ p {
   height: auto;
   width: 80%;
   padding: 1em 0;
+  scroll-margin-top: 7em;
 }
 .prizes-wrapper::after {
   content: "";
@@ -291,6 +311,7 @@ p {
   height: auto;
   width: 80%;
   padding: 1em 0;
+  scroll-margin-top: 7em;
 }
 .sponsors-wrapper::after {
   content: "";
