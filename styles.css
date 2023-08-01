@@ -280,5 +280,44 @@ p {
 }
 /* end prizes styles */
 
+/* begin sponsors styles */
+
+.sponsors-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: auto;
+  width: 80%;
+  padding: 1em 0;
+}
+.sponsors-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  background-color: var(--bg-clr);
+  z-index: -1;
+}
+
+.sponsors-wrapper > .sponsors-image-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+
+  width: 95%;
+  padding: 1em 0;
+}
+
+.sponsors-image {
+  height: 16em;
+  width: 100%;
+  
+  background-color: var(--accent-clr);
+  border-radius: var(--rounded-radius);
+}
 
 
+/* end sponsors styles */
