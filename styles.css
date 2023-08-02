@@ -451,6 +451,8 @@ p {
 }
 /* end faq styles */
 
+/* begin footer styles */ 
+
 *{
 	margin:0;
 	padding:0;
@@ -470,6 +472,8 @@ ul{
 .footer{
 	background-color: #414535;
     padding: 70px 0;
+
+  width: 100%
 }
 .footer-col{
    width: 25%;
