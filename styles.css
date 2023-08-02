@@ -50,7 +50,7 @@ h3 {
 
 h4 {
   font-size: 1.2em;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 p {
@@ -59,7 +59,7 @@ p {
 }
 
 .IMAGE-GOES-HERE {
-  background-color: #aa0000;
+  background-color: var(--bg-clr);
 }
 
 .small {
@@ -196,10 +196,9 @@ p {
 .about-wrapper > .about-bubble {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 1em;
 
-  text-align: center;
   padding: 1em;
   border-radius: var(--rounded-radius);
   background-color: var(--main-clr);
@@ -226,6 +225,7 @@ p {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 
   height: auto;
@@ -252,7 +252,7 @@ p {
 .projects-wrapper > .projects-image-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 4em;
+  gap: 1em;
   padding: 2em 0;
 }
 .projects-image {
@@ -341,19 +341,15 @@ p {
   background-color: var(--accent-clr);
   border-radius: var(--rounded-radius);
 }
-
-
 /* end sponsors styles */
 
 /* begin schedule styles */
-
 .schedules-wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  
   height: auto;
   width: 80%;
   margin: 0 4em;
@@ -375,7 +371,82 @@ p {
   
   background-color: var(--accent-clr);
   border-radius: var(--rounded-radius);
-  
+}
+/* end schedules styles */
+
+
+/* begin team styles */
+.team-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: auto;
+  width: 80%;
+  margin: 0 4em;
+  scroll-margin-top: 7em;
+  padding: 1em 0
 }
 
-/* end schedules styles */
+
+.team-col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.team-title {
+  text-align: center;
+}
+
+.team-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+
+  width: 40%;
+}
+
+.team-row > li {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: var(--bg-clr);
+  border-radius: 50%;
+}
+/* end team styles */
+
+
+/* begin faq styles */
+.faq-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: auto;
+  width: 80%;
+  margin: 4em;
+  scroll-margin-top: 7em;
+  padding: 1em 0
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1em;
+  width: 100%;
+}
+
+.faq-grid-item {
+  background-color: var(--bg-clr);
+  border-radius: var(--rounded-radius);
+  padding: 1em;
+}
+/* end faq styles */
