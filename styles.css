@@ -141,6 +141,7 @@ p {
   color: var(--text-clr);
   background-color: var(--accent-clr);
   border-radius: var(--rounded-radius);
+  cursor: pointer;
 }
 
 .nav-wrapper > .nav {
