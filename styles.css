@@ -216,7 +216,11 @@ p {
   margin: auto 0;
   border-radius: var(--rounded-radius);
   background-color: var(--accent-clr);
+
+  text-decoration: none;
+  color: var(--text-clr);
 }
+
 /* end about page styles */
 
 
@@ -344,7 +348,7 @@ p {
 /* end sponsors styles */
 
 /* begin schedule styles */
-.schedules-wrapper {
+.schedule-wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -356,7 +360,7 @@ p {
   scroll-margin-top: 7em;
   padding: 1em 0
 }
-.schedules-wrapper::after {
+.schedule-wrapper::after {
   content: "";
   position: absolute;
   bottom: 0;
