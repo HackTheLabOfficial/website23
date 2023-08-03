@@ -17,6 +17,9 @@ html, body, div, h1, h2, h3, h4, h5, p, ul, li {
   --text-clr: #1E1E1E;
 
   --rounded-radius: 1em;
+
+  --cursor-x: 0;
+  --cursor-y: 0;
 }
 
 html {
@@ -105,11 +108,18 @@ p {
   flex-direction: row;
   justify-content: space-between;
   padding: 1em 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  background: radial-gradient(circle at var(--cursor-x) var(--cursor-y), var(--accent-clr), var(--page-clr), var(--page-clr), var(--page-clr));
 
   width: 100%;
   height: 5em;
   background-color: var(--page-clr);
   z-index: 100;
+}
+
+.nav-wrapper:hover {
+  cursor: default;
 }
 
 .nav-wrapper > .logo {
@@ -135,13 +145,22 @@ p {
   text-decoration: none;
   padding: 0.5em 0.75em;
   display: inline-block;
+  border-radius: var(--rounded-radius);
+  background-color: transparent;
+  letter-spacing: 0;
+  font-weight: 100;
+
+  transition: background-color 0.2s ease-in-out, letter-spacing 0.2s ease-in-out;
 }
 
 .nav a:hover {
   color: var(--text-clr);
   background-color: var(--accent-clr);
-  border-radius: var(--rounded-radius);
   cursor: pointer;
+  letter-spacing: 2px;
+  font-weight: 600;
+
+  transition: background-color 0.2s ease-in-out, letter-spacing 0.2s ease-in-out;
 }
 
 .nav-wrapper > .nav {
