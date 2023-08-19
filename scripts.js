@@ -25,3 +25,20 @@ function updateCursorPosition(e) {
   document.documentElement.style.setProperty("--cursor-x", x + "px");
   document.documentElement.style.setProperty("--cursor-y", y + "px");
 }
+
+
+function scuffedComingSoonUpdateImage (){
+  let allEmptyImages = document.querySelectorAll(".IMAGE-GOES-HERE");
+  allEmptyImages.forEach((image) => {
+    let parent = image.parentElement;
+    let classes = image.classList;
+    parent.removeChild(image);
+    let templateElement = document.createElement("div");
+    templateElement.style = "display: flex; justify-content: center; align-items: center; color: rgba(0, 0, 0, 0.35); font-style: italic;"
+    templateElement.innerHTML = "Coming Soon!"
+    templateElement.classList = classes;
+    parent.appendChild(templateElement);
+  });
+}
+
+scuffedComingSoonUpdateImage();
