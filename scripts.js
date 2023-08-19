@@ -1,4 +1,4 @@
-const navList = document.querySelectorAll(".nav > * > *");
+const navList = document.querySelectorAll(".nav > li > *");
 
 const navMapping = {
   "prizes-nav": "#prizes-section",

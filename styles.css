@@ -163,6 +163,16 @@ p {
   transition: background-color 0.2s ease-in-out, letter-spacing 0.2s ease-in-out;
 }
 
+.nav a#discord-widget > svg {
+  fill: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s ease-in-out, fill 0.2s ease-in-out;
+}
+
+.nav a#discord-widget:hover > svg {
+  fill: rgba(88, 101, 242, 1);
+  transition: background-color 0.2s ease-in-out, fill 0.2s ease-in-out;
+}
+
 .nav-wrapper > .nav {
   display: flex;
   flex-direction: row;
@@ -433,12 +443,13 @@ p {
   justify-content: center;
   gap: 1em;
 
-  width: 40%;
+  width: 100%;
+  height: 10em;
 }
 
 .team-row > li {
-  width: 100%;
-  aspect-ratio: 1 / 1;
+  width: 10em;
+  height: 10em;
   background-color: var(--bg-clr);
   border-radius: 50%;
 }
