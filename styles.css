@@ -35,7 +35,7 @@ body {
 
 h1 {
   font-size: 4rem;
-  font-weight: 500;
+  font-weight: 500; 
 }
 
 h2 {
@@ -43,23 +43,40 @@ h2 {
   font-weight: 500;
   margin-bottom: 1.4em;
   text-align: center;
+  color: white;
 }
 
 h3 {
   font-size: 1.5rem;
   font-weight: 800;
   letter-spacing: -1px;
+  
 }
 
 h4 {
   font-size: 1.2em;
   font-weight: 600;
+  color: white;
 }
 
 p {
   font-size: 1em;
   font-weight: 300;
+  color: var(--accent-clr);
 }
+
+.sponsors-title {
+  color: var(--text-clr); 
+}
+
+.schedule-title {
+  color: var(--text-clr); 
+}
+
+.schedule-description{
+  color: var(--text-clr);
+}
+
 
 .IMAGE-GOES-HERE {
   background-color: var(--bg-clr);
@@ -69,12 +86,12 @@ p {
   font-size: 0.8em;
   font-weight: 300;
   font-style: italic;
+  
 }
 
 .button {
   text-decoration: none;
   cursor: pointer;
-
   transition: transform 0.2s ease-in-out;
 }
 .button:hover {
@@ -93,6 +110,7 @@ p {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
+  
 }
 .main > * {
   padding-bottom: 2em;
@@ -217,6 +235,7 @@ p {
   height: auto;
   width: 80%;
   margin: 0 4em;
+  
 }
 .about-wrapper > * {
 
@@ -230,9 +249,8 @@ p {
 
   padding: 1em;
   border-radius: var(--rounded-radius);
-  background-color: var(--main-clr);
-  /*background-image: linear-gradient(#368FC0, #48BEFF, #42F6FF); */
-  background-image: linear-gradient(#42F6FF, #48BEFF, #368FC0); 
+  background-color: #3D7068;
+   /*background-image: linear-gradient(#42F6FF, #48BEFF, #368FC0); first draft*/
 }
 .about-wrapper > .register {
   display: flex;
@@ -241,17 +259,18 @@ p {
 
   text-align: center;
   padding: 1em;
+  
 }
 .register-button {
   padding: 16px 32px;
   margin: auto 0;
   border-radius: var(--rounded-radius);
-  background-color: var(--accent-clr);
-  /*background-image: linear-gradient(#48BEFF, #42F6FF); */
-  background-image: linear-gradient(#42F6FF, #48BEFF);
+  background-color: #3D7068;
+  /*background-image: linear-gradient(#42F6FF, #48BEFF); first draft*/
 
   text-decoration: none;
-  color: var(--text-clr);
+  /*color: var(--text-clr); */
+  color: white;
 }
 
 /* end about page styles */
@@ -276,7 +295,8 @@ p {
   top: 0;
   bottom: 0;
   width: 100vw;
-  background-color: var(--accent-clr);
+  background-color: var(--main-clr);
+  
   z-index: -1;
 }
 
@@ -318,8 +338,9 @@ p {
   top: 0;
   bottom: 0;
   width: 100vw;
-  background-color: var(--main-clr);
-  background-image: linear-gradient(#43C59E, #3D7068, #14453D);
+  background-color: #022F2F;
+  background-color: #103731;
+ /* background-image: linear-gradient(#43C59E, #3D7068, #14453D); */
   z-index: -1;
 }
 
@@ -393,7 +414,7 @@ p {
   width: 80%;
   margin: 0 4em;
   scroll-margin-top: 7em;
-  padding: 1em 0
+  padding: 1em 0;
 }
 .schedule-wrapper::after {
   content: "";
@@ -401,6 +422,7 @@ p {
   bottom: 0;
   width: 100vw;
   background-color: var(--bg-clr);
+
   z-index: -1;
 }
 
@@ -426,7 +448,7 @@ p {
   margin: 0 4em;
   scroll-margin-top: 7em;
   padding: 1em 0;
-  background-image: linear-gradient(375deg, #14453D, #3D7068, #43C59E, #42F6FF, #48BEFF, #368FC0);
+  background-image: linear-gradient(375deg, #14453D, #3D7068);
 }
 
 
@@ -489,7 +511,7 @@ figure figcaption {
   width: 80%;
   margin: 4em;
   scroll-margin-top: 7em;
-  padding: 1em 0
+  padding: 1em 0;
 }
 
 .faq-grid {
@@ -501,7 +523,7 @@ figure figcaption {
 }
 
 .faq-grid-item {
-  background-color: var(--bg-clr);
+  background-color: #3D7068;
   border-radius: var(--rounded-radius);
   padding: 1em;
 }
