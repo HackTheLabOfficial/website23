@@ -513,7 +513,9 @@ figure figcaption {
   scroll-margin-top: 7em;
   padding: 1em 0;
 }
-
+.faq-title{
+  color:var(--text-clr)
+}
 .faq-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
