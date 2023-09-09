@@ -26,8 +26,7 @@ function updateCursorPosition(e) {
   document.documentElement.style.setProperty("--cursor-y", y + "px");
 }
 
-
-function scuffedComingSoonUpdateImage (){
+(function scuffedComingSoonUpdateImage (){
   let allEmptyImages = document.querySelectorAll(".IMAGE-GOES-HERE");
   allEmptyImages.forEach((image) => {
     let parent = image.parentElement;
@@ -39,6 +38,29 @@ function scuffedComingSoonUpdateImage (){
     templateElement.classList = classes;
     parent.appendChild(templateElement);
   });
-}
+})();
 
-scuffedComingSoonUpdateImage();
+
+
+(function markVisibleElements() {
+  const options = {
+    root: null, 
+    rootMargin: '0px', 
+    threshold: 0.5, 
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, options);
+
+  const elementsToCheck = document.querySelectorAll('.main > * > *');
+  elementsToCheck.forEach((element) => observer.observe(element));
+})();
+
+
+
