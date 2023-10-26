@@ -21,6 +21,8 @@ html, body, div, h1, h2, h3, h4, h5, p, ul, li {
 
   --cursor-x: 0;
   --cursor-y: 0;
+
+  font-size: 16px;
 }
 
 html {
@@ -410,13 +412,17 @@ p {
   width: 95%;
   padding: 1em 0;
 }
-
 .sponsors-image {
-  height: 16em;
-  width: 100%;
+  height: 12em;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  padding: 4px;
   
   background-color: var(--accent-clr);
   border-radius: var(--rounded-radius);
+}
+.sponsor-fill-bg {
+  object-fit: cover;
 }
 /* end sponsors styles */
 
@@ -444,8 +450,9 @@ p {
 }
 
 .schedule-image {
-  height: 40em;
   width: 80em;
+  aspect-ratio: 2 / 1;
+  padding-top: 4px;
   
   background-color: var(--accent-clr);
   border-radius: var(--rounded-radius);
@@ -631,14 +638,82 @@ ul{
 }
 
 /*responsive*/
-@media(max-width: 767px){
-  .footer-col{
+@media (max-width: 767px) {
+  :root {
+    font-size: 12px;
+  }
+
+  .nav-wrapper > .logo {
+    padding-left: 0;
+  }
+  .logo-text {
+    font-size: 1em;
+    line-height: 1em;
+  }
+  .nav {
+    flex-wrap: nowrap;
+    gap: 0.1em !important;
+  }
+  .nav > li {
+    margin-left: -2px;
+    margin-right: -2px;
+  }
+
+  .landing-wrapper {
+    width: 100%;
+  }
+  .landing-image{
+    min-width: 300px !important;
+    min-height: 100px !important;
+  }
+
+  .about-wrapper {
+    width: 100%;
+  }
+  .about-bubble {
+    border-radius: 0 var(--rounded-radius) var(--rounded-radius) 0 !important;
+  }
+
+  .projects-image-row {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(3, 1fr) !important;
+  }
+
+  .prizes-image-row {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(3, 1fr) !important;
+  }
+
+  .sponsors-image-row {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(2, 1fr) !important;
+  }
+  .sponsors-image {
+    height: 8em !important;
+  }
+
+  .schedule-image {
+    width: 100% !important;
+  }
+
+  .team-col {
+    gap: 0.4em !important;
+  }
+  .team-row {
+    flex-wrap: wrap;
+    height: auto !important;
+  }
+
+  .faq-wrapper {
+    width: 90% !important;
+  }
+  .faq-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(2, 1fr) !important;
+  }
+
+  .footer-col {
     width: 50%;
     margin-bottom: 30px;
-}
-}
-@media(max-width: 574px){
-  .footer-col{
-    width: 100%;
-}
+  }
 }
