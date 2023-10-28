@@ -450,9 +450,8 @@ p {
 }
 
 .schedule-image {
-  width: 80em;
-  aspect-ratio: 2 / 1;
-  padding-top: 4px;
+  width: 60em;
+  aspect-ratio: 17 / 10;
   
   background-color: var(--accent-clr);
   border-radius: var(--rounded-radius);
